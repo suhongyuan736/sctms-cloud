@@ -1,0 +1,14 @@
+server:
+  port: 8763
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serverUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/,http://127.0.0.1:8762/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false
